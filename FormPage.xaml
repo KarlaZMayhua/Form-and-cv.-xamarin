@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FormApp"
+             x:Class="FormApp.FormPage">
+    <StackLayout Padding="20">
+        <Label Text="Formulario de Curriculum Vitae" FontSize="Title" HorizontalOptions="Center" Margin="0,20,0,40" />
+        <Entry x:Name="txtNombres" Placeholder="Nombres" />
+        <Entry x:Name="txtApellidos" Placeholder="Apellidos" />
+        <DatePicker x:Name="dpFechaNacimiento" Format="dd/MM/yyyy" Placeholder="Fecha de Nacimiento" />
+        <Entry x:Name="txtOcupacion" Placeholder="Ocupación" />
+        <Editor x:Name="txtAptitudes" Placeholder="Aptitudes" />
+        <Entry x:Name="txtCorreoElectronico" Placeholder="Correo Electrónico" Keyboard="Email" />
+        <Entry x:Name="txtNumeroCelular" Placeholder="Número de Celular" Keyboard="Telephone" />
+        <Button Text="Enviar" Clicked="Enviar_Clicked" HorizontalOptions="Center" Margin="0,20,0,0" />
+    </StackLayout>
+</ContentPage>
